@@ -1,0 +1,235 @@
+@import "./base.css";
+body{
+    height: 2000px;
+}
+
+.navbar-expand-lg .navbar-nav {
+    gap: 10px;
+}
+
+.container-fluid  {
+    gap: 20px;
+}
+
+.search-icon{
+    color: blue;
+ 
+}
+.btn {
+    border: 0px;;
+}
+
+.modal {
+    background-color:rgba(13, 75, 233, 0.527);
+}
+.btn-outline-success{
+    --bs-btn-color: #eeeeee;
+    --bs-btn-border-color: #645aa098;
+    --bs-btn-hover-color: #e8e9eb;
+    --bs-btn-hover-bg: #645aa098;
+    --bs-btn-hover-border-color: #645aa098;
+    --bs-btn-focus-shadow-rgb: 25, 135, 84;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #645aa098;
+    --bs-btn-active-border-color: #645aa098;
+    --bs-btn-disabled-color: #645aa098;
+    --bs-btn-disabled-border-color: #645aa098;
+
+}
+.carousel-item  {
+    position: relative;
+
+}
+.intro::before{
+    content: "";
+    position: absolute;
+    top: -15px;
+    right: 15px;
+    width: 100%;
+    height: 100%;
+    background-color:var(--mainColor);
+    border-radius: 5px;
+    z-index: -1;
+    opacity: 0.5; 
+}
+ .intro{
+    position:absolute;
+    top: 20%;
+    left: 12%;
+    padding: 30px;
+    color: white;
+    background-color:var(--mainColor);
+    width:500px;
+    height: 400px;
+    border-radius: 5px;
+    z-index: 3;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    opacity: .9; 
+    gap: 10px;
+   
+
+ }
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    background-color: var(--mainColor);
+    border-radius: 50%;
+    padding: 20px;
+  
+}
+.btn-service{
+    color: var(--mainColor);
+    border-radius: 5px;
+    background-color: white;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+.btn-service:hover{
+    background-color:#0849ee;
+    color: white;
+}
+/* About section */
+.about-text {
+    width:30%;
+}
+.about-text img{
+    width:50%;
+}
+.about-text p{
+    color:var(--color-heading);
+
+}
+.service-item{
+    width:250px;
+    background-color: var(--mainColor);
+    border-radius: 5px;
+    padding: 20px;
+    transition: transform 0.1s ease;
+}
+.service-item:hover {
+    animation: shake 0.5s ease-in-out;
+}
+
+
+.service-item a {
+    color:#fff;
+    font-weight: bold;
+  
+   
+}
+/* animation */
+
+.fade-in {
+    opacity: 0;
+    animation: fadeInLeft 2s ease-in forwards;
+}
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0; /* Start fully transparent */
+        transform: translateX(-50px); /* Start slightly off-screen to the left */
+    }
+    100% {
+        opacity: 1; /* End fully opaque */
+        transform: translateX(0); /* End in original position */
+    }
+}
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+/* responsive header */
+@media screen and (max-width:1000px) {
+    .navbar>.container-fluid{
+       justify-content:flex-start;
+
+    }
+    .logo{
+        width:calc(100% - 300px);
+        justify-content:flex-start;
+    }
+    .navbar-toggler{
+ 
+        order:4;
+    }
+    .search {
+        order:2;
+    }
+    .appointment-btn{
+
+        order:3;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .logo{
+        width:fit-content;
+    }
+
+}
+/* ---------responsive page1------- */
+@media screen and (max-width:800px) {
+    .intro{
+        width:calc(100% - 250px);
+        top: 50px;
+        left: 100px;
+    }
+}
+@media screen and (max-width:500px) {
+ 
+    .intro{
+        width:calc(100% - 150px);
+        top: 50px;
+        left: 80px;
+
+    }
+}
+@media screen and (max-width:400px) {
+ 
+    .intro{
+        width:85%;
+        left: 30px;
+
+    }
+    .carousel-control-prev,.carousel-control-next{
+        display: none;
+    }
+}
+/* responsive page2 */
+@media screen and (max-width:900px) {
+ 
+   .about-img {
+    width:20%;
+   }
+   .about-text {
+    width:65%;
+    padding-top: 40px;
+   }
+   .about-text img{
+    width:35%;
+   }
+    .service-item {
+        width:100%;
+        padding: 10px 100px;
+
+    }
+   
+}
+@media screen and (max-width:440px) {
+ 
+    .about-img {
+     width:100%;
+    }
+    
+    
+}
