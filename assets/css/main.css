@@ -3,7 +3,10 @@
 body {
     height: 2000px;
 }
+body, html {
+    overflow-x: hidden;
 
+  }
 .navbar-expand-lg .navbar-nav {
     gap: 10px;
 }
@@ -19,7 +22,7 @@ body {
 
 .btn {
     border: 0px;
-    ;
+
 }
 
 .modal {
@@ -146,7 +149,6 @@ body {
 /* sevices section */
 .medical-services {
     padding: 10px;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -442,3 +444,5 @@ body {
     }
 
 }
+
+  

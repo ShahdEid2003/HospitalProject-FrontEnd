@@ -27,7 +27,7 @@ zoomButtonPre.addEventListener('click', () => {
 });
 
 const swiper = new Swiper('.swiper-container', {
-    spaceBetween: 7,
+    spaceBetween: -100,
     freeMode: true,
     loop: true,
     pagination: {
