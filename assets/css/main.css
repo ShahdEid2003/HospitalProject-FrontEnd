@@ -493,7 +493,7 @@ ul li {
   .intro {
     width: calc(100% - 250px);
     height:fit-content;
-    top: 30px;
+    top: 20px;
     left: 100px;
   }
   .slider-img  img{
