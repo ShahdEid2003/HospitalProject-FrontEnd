@@ -493,7 +493,7 @@ ul li {
   .intro {
     width: calc(100% - 250px);
     height:fit-content;
-    top: 50px;
+    top: 30px;
     left: 100px;
   }
   .slider-img  img{
@@ -506,7 +506,6 @@ ul li {
 @media screen and (max-width: 500px) {
   .intro {
     width: calc(100% - 150px);
-    top: 50px;
     left: 80px;
   }
 }
