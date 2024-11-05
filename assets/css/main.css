@@ -6,7 +6,7 @@ body {
     overflow-x: hidden;
     font-family: "Raleway", sans-serif;
 }
-.sticky-top1 {
+.sticky-top {
     position:fixed;
     top: 0;
     z-index: 1020;
@@ -16,7 +16,9 @@ body {
 .text-section li {
     color: var(--color-p);
 }
-
+p{
+    color:var(--color-p);
+}
 ul li {
     font-family: "Roboto", sans-serif;
 }
