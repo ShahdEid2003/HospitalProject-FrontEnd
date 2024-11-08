@@ -27,7 +27,7 @@ ul li {
     font-family: "Roboto", sans-serif;
 }
 
-.slider-img {
+.slider-img , .contact-veiw .background-veiw{
     padding-top: 75px;
 }
 
@@ -456,6 +456,7 @@ ul li {
  .doctor-img:hover img {
     transform: scale(1.1); /* تكبير الصورة قليلاً */
   }
+ 
   /* appointment */
   .appointment{
     padding: 100px;
@@ -481,6 +482,8 @@ ul li {
 .appointment span{
     font-size: 25px;
 }
+ /* contact page */
+ 
 /* animation */
 
 .fade-in {
