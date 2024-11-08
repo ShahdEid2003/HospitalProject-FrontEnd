@@ -1,9 +1,8 @@
-
+//slider-MainImages
 const images = document.querySelectorAll('.carousel-item .image');
 const zoomButtonNext = document.querySelector('.carousel-control-next');
 const zoomButtonPre = document.querySelector('.carousel-control-prev');
 const animations = ['glitch', 'zoom-in', 'fade-in', 'slide-in'];
-
 
 zoomButtonNext.addEventListener('click', () => {
   images.forEach(image => {
@@ -26,8 +25,9 @@ zoomButtonPre.addEventListener('click', () => {
   });
 });
 
+//medical-services
 const swiper = new Swiper('.swiper-container', {
-  spaceBetween: -100,
+  spaceBetween:110,
   freeMode: true,
   loop: true,
   pagination: {
@@ -35,23 +35,28 @@ const swiper = new Swiper('.swiper-container', {
     clickable: true,
   },
   breakpoints: {
-
-    640: {
+    300: {
       slidesPerView: 1,
     },
 
-    768: {
+    400: {
+      slidesPerView: 1.7,
+    },
+
+    550: {
       slidesPerView: 2,
     },
-
-    1024: {
-      slidesPerView: 3,
+    700: {
+      slidesPerView: 2.7,
     },
-  },
+    1200: {
+      slidesPerView:4,
+    },
+
+ },
 });
-
+//our-specility
 let currentSlide = 0;
-
 function showSlide(index) {
   const slides = document.querySelectorAll('.our-specility .slide');
   slides[currentSlide].style.display = 'none';
@@ -59,4 +64,50 @@ function showSlide(index) {
   slides[currentSlide].style.display = 'flex';
 }
 showSlide(0);
+
+//speciliest-Doctors
+var swiper3 = new Swiper(".mySwiper", {
+  slidesPerView: 4, 
+  spaceBetween: 0,
+  freeMode: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    300: {
+      slidesPerView: .5,
+      spaceBetween: 10,
+    },
+    350: {
+      slidesPerView: .7,
+      spaceBetween: 10,
+    },
+    450: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    750: {
+      slidesPerView: 1.5,
+      spaceBetween: 10,
+    },
+    800: {
+      slidesPerView: 2.5,
+      spaceBetween: 10,
+    },
+    
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    
+  },
+});
+
+
+
 
