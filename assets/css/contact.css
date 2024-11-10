@@ -71,7 +71,9 @@
 }
 
 /* form */
-
+.contact-section {
+    padding:20px;
+}
 .contact-section .container-fluid {
     display: flex;
     justify-content: center;

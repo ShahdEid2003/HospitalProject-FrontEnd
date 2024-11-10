@@ -482,7 +482,64 @@ ul li {
 .appointment span{
     font-size: 25px;
 }
- /* contact page */
+ /* footer */
+/* Footer General Styles */
+.footer {
+    font-family: 'Roboto', sans-serif;
+    background-color:#111;;
+    color: #e3e3e3;
+    padding: 40px;
+}
+
+.footer .container-fluid ,.footer-logo{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-logo {
+    max-width: 250px;
+}
+
+.footer-logo img {
+    width: 70%;
+
+}
+.footer-logo{
+    flex-direction: column;
+  
+}
+.footer-links ul li a , .footer p{
+    color: #e3e3e3;
+
+}
+.footer-links ul li a:hover,.footer-hours .closed {
+    color: var(--mainColor);
+}
+
+
+.footer-copyright {
+    text-align: center;
+    font-size: 15px;
+    padding: 15px;
+}
+.footer h2{
+    font-weight: bold;
+    font-size:20px;
+}
+.footer h2::after{
+    content: '';
+    display: block;
+    width: 40px;
+    height: 3px;
+    background-color: var(--mainColor);
+    margin-top: 10px;
+    border-radius: 10%;
+  
+}
+.footer-copyright a{
+    color:white;  
+}
  
 /* animation */
 
