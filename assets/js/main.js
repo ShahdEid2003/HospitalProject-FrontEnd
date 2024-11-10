@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const startCounting = (counter) => {
       const target = +counter.getAttribute('data-target');
-      counter.innerText = "0"; // إعادة تعيين القيمة إلى 0 قبل البدء بالعدّ
+      counter.innerText = "0"; 
       const updateCount = () => {
           const count = +counter.innerText;
           const increment = target / speed;
