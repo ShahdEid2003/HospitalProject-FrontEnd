@@ -107,7 +107,40 @@ var swiper3 = new Swiper(".mySwiper", {
     
   },
 });
+//statistics
+document.addEventListener("DOMContentLoaded", () => {
+  const counters = document.querySelectorAll('.count');
+  const speed = 200;
 
+  const startCounting = (counter) => {
+      const target = +counter.getAttribute('data-target');
+      counter.innerText = "0"; // إعادة تعيين القيمة إلى 0 قبل البدء بالعدّ
+      const updateCount = () => {
+          const count = +counter.innerText;
+          const increment = target / speed;
 
+          if (count < target) {
+              counter.innerText = Math.ceil(count + increment);
+              setTimeout(updateCount, 10);
+          } else {
+              counter.innerText = target;
+          }
+      };
+
+      updateCount();
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              startCounting(entry.target);
+          }
+      });
+  }, { threshold: 0.5 });
+
+  counters.forEach(counter => {
+      observer.observe(counter);
+  });
+});
 
 

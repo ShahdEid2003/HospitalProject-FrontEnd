@@ -178,15 +178,16 @@ ul li {
 
 .medical-services-header,
 .our-specility-header,
-.specialist-doctors-header {
+.specialist-doctors-header ,.working-process-header{
     position: relative;
     padding-top: 50px;
     padding-bottom: 6px;
+    margin-bottom: 20px;
 }
 
 .medical-services-header:after,
 .our-specility-header:after,
-.specialist-doctors-header:after {
+.specialist-doctors-header:after,.working-process-header:after {
     position: absolute;
     content: "";
     height: 4px;
@@ -482,8 +483,84 @@ ul li {
 .appointment span{
     font-size: 25px;
 }
+/* working-process */
+.working-process {
+    background: url("./../img/working-process/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: max-content;
+    text-align: center;
+    padding: 20px;
+}
+
+.working-process .container-fluid {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.process-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:15px;
+    width: 220px;
+    height: max-content;
+    text-align: center;
+    padding:18px;
+}
+
+.process-item img {
+    width: 100%;
+    border-radius: 50%;
+
+}
+.process-item img:hover{
+    transform: scale(1.1);
+    border:3px solid var(--mainColor);
+}
+.process-item h3 {
+    font-size: 20px;
+}
+.process-item  a{
+    color: black;
+
+}
+.process-item  a:hover{
+    color: var(--mainColor);
+
+}
+/* statistics */
+.statistics {
+    height: max-content;
+}
+.statistics .container-fluid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  
+}
+
+.count {
+    font-size: 2em;
+    font-weight: bold;
+    color: black;
+}
+
  /* footer */
-/* Footer General Styles */
+
 .footer {
     font-family: 'Roboto', sans-serif;
     background-color:#111;;
