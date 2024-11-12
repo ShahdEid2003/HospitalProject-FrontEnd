@@ -142,5 +142,30 @@ document.addEventListener("DOMContentLoaded", () => {
       observer.observe(counter);
   });
 });
+// testimonial
+const bgTest = document.querySelectorAll('.carousel-item .testimonial-card');
+const ButtonNext = document.querySelector('.testimonial .carousel-control-next');
+const ButtonPre = document.querySelector('.testimonial .carousel-control-prev');
+const animationsTest = ['zoom-in', 'fade-in', 'slide-in'];
+ButtonNext.addEventListener('click', () => {
+  bgTest.forEach(bgTest => {
+
+    animationsTest.forEach(animationsTest => bgTest.classList.remove(animationsTest));
+
+    const randomAnimation = animationsTest[Math.floor(Math.random() * animationsTest.length)];
+
+    bgTest.classList.add(randomAnimation);
+  });
+});
+ButtonPre.addEventListener('click', () => {
+  bgTest.forEach(bgTest => {
+
+    animationsTest.forEach(animationsTest=> bgTest.classList.remove(animationsTest));
+
+    const randomAnimation = animationsTest[Math.floor(Math.random() * animationsTest.length)];
+
+    bgTest.classList.add(randomAnimation);
+  });
+});
 
 

@@ -178,7 +178,7 @@ ul li {
 
 .medical-services-header,
 .our-specility-header,
-.specialist-doctors-header ,.working-process-header{
+.specialist-doctors-header ,.working-process-header,.news-header{
     position: relative;
     padding-top: 50px;
     padding-bottom: 6px;
@@ -187,7 +187,7 @@ ul li {
 
 .medical-services-header:after,
 .our-specility-header:after,
-.specialist-doctors-header:after,.working-process-header:after {
+.specialist-doctors-header:after,.working-process-header:after,.news-header::after {
     position: absolute;
     content: "";
     height: 4px;
@@ -460,15 +460,19 @@ ul li {
  
   /* appointment */
   .appointment{
-    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
     background: url(./../img/appointment/appointment.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: max-content;
+    height: 400px;
     width: 100%;
     color: white;
   }
+
 .appointment-button .btn {
     width: fit-content;
     padding: 10px 20px;
@@ -492,13 +496,6 @@ ul li {
     height: max-content;
     text-align: center;
     padding: 20px;
-}
-
-.working-process .container-fluid {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
 }
 
 .process-item {
@@ -535,16 +532,10 @@ ul li {
 /* statistics */
 .statistics {
     height: max-content;
-}
-.statistics .container-fluid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
     padding: 20px;
     text-align: center;
     background-color: white;
 }
-
 .stat-item {
     display: flex;
     flex-direction: column;
@@ -557,6 +548,113 @@ ul li {
     font-size: 2em;
     font-weight: bold;
     color: black;
+}
+/* testimonial */
+.testimonial { 
+    text-align: center;
+}
+
+.testimonial-background::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background:url("./../img/testimonial/bg-test.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+}
+.testimonial-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(57, 108, 240, 0.9);
+    width: 100%;
+    height:max-content;
+    padding:30px;
+    position: relative;
+}
+
+.testimonial-card {
+    color:white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width:50%;
+    z-index: 1;
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 3px solid white;
+}
+.testimonial-text, .profile-title{
+    font-size: 20px;
+    font-weight: bold;
+    color:white;
+}
+/* news */
+.news{
+    padding:20px;
+    background-color:#f3f3f3;
+    height:max-content;
+}
+.news .row{
+    padding-top:15px;
+}
+.news-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+}
+.news-content{
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.news-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.date-icon , .admin-icon  {
+    margin: 2.5px;
+}
+
+.news-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.read-more {
+    color: var(--mainColor);
+    font-weight: bold;
+}
+
+
+.news-footer{
+    position: relative;
+    padding:10px;
+    border-top:#cccccc 1px solid;
 }
 
  /* footer */
@@ -876,4 +974,11 @@ ul li {
         width: 100%
     }
 
+}
+/* responsive testimonial */
+@media screen and (max-width: 600px) {
+
+    .testimonial-card{
+        width:80%;
+    }
 }
