@@ -6,7 +6,6 @@ body {
     overflow-x: hidden;
     font-family: "Raleway", sans-serif;
 }
-
 .sticky-top {
     position: fixed;
     top: 0;

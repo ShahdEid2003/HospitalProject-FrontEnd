@@ -1,4 +1,4 @@
-/* preveiw */
+/* contact preveiw */
 .contact-veiw .background-veiw {
     position: relative;
     background-color: rgba(57, 108, 240, 0.9);
@@ -25,7 +25,8 @@
 
 .contact-header {
     color: white;
-    padding: 100px;
+    padding-top: 150px;
+    padding-left: 20px;
     position: absolute;
     top: 0;
     left: 0;
@@ -37,11 +38,9 @@
 }
 
 .contact-header a {
-
     color: white;
     font-size: 25px;
     font-weight: bold;
-
     transition: color 0.3s ease;
 }
 /* map */
@@ -56,7 +55,6 @@
 }
 
 .mapouter {
-
     position: relative;
     text-align: center;
     height: 552px;
@@ -72,25 +70,7 @@
 
 /* form */
 .contact-section {
-    padding:20px;
-}
-.contact-section .container-fluid {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 50px;
-    width: calc(100% - 150px);
-}
-
-.contact-form {
-    flex: 1;
-}
-
-
-
-.contact-form form label {
-    display: block;
-    margin: 10px 0 5px;
+    padding:10px;  
 }
 
 .contact-form input,
@@ -110,12 +90,6 @@
     border-radius: 4px;
     cursor: pointer;
 }
-
-
-.contact-address {
-    flex: 1;
-}
-
 
 .contact-address p {
     display: flex;
@@ -178,4 +152,3 @@
         width: 300px;
     }
 }
-

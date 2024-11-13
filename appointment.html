@@ -4,19 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Appointment Form</title>
     <!-- font-awsome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- swiper -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
     <!-- cssLink -->
-    <link rel="stylesheet" href="./assets/css/contact.css">
     <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/appointment.css">
+
 </head>
 
 <body>
@@ -161,63 +160,76 @@
     </div>
     <!-- sections -->
     <main>
-        <section class="contact-veiw">
+        <section class="appointment-veiw">
             <div class="background-veiw">
-                <div class="contact-header">
-                    <h2 class="fw-bold">Contact</h2>
-                    <a href="#">Medilink - Medical WordPress Theme > Contact</a>
-                </div>
-            </div>
-
-        </section>
-
-        <section class="map">
-            <div class="container-fluid">
-                <div class="mapouter">
-                    <div class="gmap_canvas"><iframe width="1080" height="552" id="gmap_canvas"
-                            src="https://maps.google.com/maps?q=Qalqilia&t=k&z=13&ie=UTF8&iwloc=&output=embed"
-                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
-                            href="https://123movies-i.net">123movies</a><br>
-                        <a href="https://www.embedgooglemap.net">embedgooglemap.net</a>
-                    </div>
+                <div class="appointment-header">
+                    <h2 class="fw-bold">Appointment Form</h2>
+                    <a href="#">Medilink - Medical WordPress Theme > Appointment Form </a>
                 </div>
             </div>
         </section>
-
-        <section class="contact-section">
+        <section class="appointment-form">
             <div class="container">
                 <div class="row gx-5 gy-5">
-                    <div class=" col-12 col-md-7 ">
-                        <div class="contact-form">
-                            <h2 class="fw-bold">Leave Us Message</h2>
-                            <form>
-                                <label for="name">Your Name (required)</label>
-                                <input type="text" id="name" required>
+                    <div class="col-md-7">
+                        <div class="appoint-form">
+                            <h3 class="fw-bold">Make An Appointment</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
+                                ullamcorper mattis, pulvinar dapibus leo.</p>
 
-                                <label for="email">Your Email (required)</label>
-                                <input type="email" id="email" required>
+                            <form action="#" method="post">
+                                <select name="department" required>
+                                    <option value="">Select Department</option>
+                                    <option value="gynaecology">Gynaecology</option>
+                                    <option value="cardiology">Cardiology</option>
+                                    <option value="orthopaedics">Orthopaedics</option>
+                                    <option value="medicine">Medicine</option>
+                                </select>
 
-                                <label for="subject">Subject</label>
-                                <input type="text" id="subject">
+                                <select name="doctor" required>
+                                    <option value="">Choose Doctor by Name</option>
+                                    <option value="dr_mou">Dr. Mou</option>
+                                    <option value="dr_kalvin">Dr. Kalvin</option>
+                                    <option value="mark_willy">Mark Willy</option>
+                                    <option value="dr_zinia_zara">Dr. Zinia Zara</option>
 
-                                <label for="message">Your Message</label>
-                                <textarea id="message" rows="4" required></textarea>
+                                </select>
 
-                                <button type="submit">Send</button>
+                                <input type="text" name="patient_name" placeholder="Patient Name *" required>
+                                <div class="inline-inputs">
+                                    <input type="tel" name="phone" placeholder="Phone *" required>
+                                    <input type="email" name="email" placeholder="E-mail *" required>
+                                </div>
+
+                                <div class="inline-inputs">
+                                    <input type="date" name="date" required>
+                                    <input type="time" name="time" required>
+                                </div>
+
+                                <textarea name="note" placeholder="Type Appointment Note"></textarea>
+                                <div class="btn-appiontment">
+                                    <button type="submit">Make an Appointment</button>
+                                </div>
+
                             </form>
                         </div>
 
                     </div>
+                    <div class="col-md-5 appiontment-img">
+                        <img src="./assets/img/appointment.png" alt="Doctor img">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact-section">
+            <div class="container-fluid text-center ">
+                <div class="contact-text">
+                    <h2 class="fw-bold">We Provide the highest level of satisfaction care & services to our patients.
+                    </h2>
 
-                    <div class=" col-12 col-md-5 ">
-                        <div class="contact-address">
-                            <h2 class="fw-bold">Address</h2>
-                            <p><i class="fa-sharp fa-solid fa-location-dot"></i> Medilink Technological Limited</p>
-                            <p><i class="fa-solid fa-phone"></i> (+123) 88 44400</p>
-                            <p><i class="fa-solid fa-phone"></i> (+123) 88 44400</p>
-                            <p><i class="fa-solid fa-fax"></i> +000000000000</p>
-                            <p><i class="fa-solid fa-envelope"></i> example@example.com</p>
-                        </div>
+                    <div class="contact-info">
+                        <span class="phone-icon"><i class="fa-solid fa-phone"></i></span>
+                        <a href="tel:+12344092888" class="phone-number">+123 44092 888</a>
                     </div>
                 </div>
             </div>
@@ -281,10 +293,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <!-- swiper js -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- main js -->
-
     <script src="./assets/js/main.js"></script>
 </body>
 

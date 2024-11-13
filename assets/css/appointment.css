@@ -1,0 +1,134 @@
+/* appointment preveiw */
+.appointment-veiw .background-veiw {
+    position: relative;
+    background-color: rgba(57, 108, 240, 0.9);
+    width: 100%;
+    height: 424px;
+    padding: 75px;
+
+
+}
+
+.appointment-veiw::before {
+    content: "";
+    position: absolute;
+    height: 459px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: url(./../img/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+}
+
+.appointment-header {
+    color: white;
+    padding-top: 150px;
+    padding-left: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.appointment-header a {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* appiontment-form */
+.appointment-form {
+    padding: 20px;
+    background-color: #f1f7fa;
+
+}
+
+.appoint-form {
+    background-color: white;
+    height: max-content;
+    padding: 30px;
+    border-radius: 3%;
+}
+
+.appointment-form select,
+.appointment-form input,
+.appointment-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.inline-inputs {
+    display: flex;
+    gap: 10px;
+}
+
+.inline-inputs input {
+    width: 100%;
+}
+
+.btn-appiontment button {
+    width: 50%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.appointment-form button:hover {
+    background-color: #0056b3;
+}
+
+.appiontment-img img,
+.btn-appiontment {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-appiontment {
+    width: 100%;
+}
+
+/* contact-sectin */
+.contact-section .container-fluid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 300px;
+}
+.contact-text{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width:80%;
+}
+.phone-icon{
+    color:var(--mainColor);
+}
+.phone-number {
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+}
+
+.phone-number:hover {
+    text-decoration: underline;
+}
