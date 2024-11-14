@@ -110,7 +110,7 @@ var swiper3 = new Swiper(".mySwiper", {
 });
 //statistics
 document.addEventListener("DOMContentLoaded", () => {
-  const counters = document.querySelectorAll('.count');
+  const counters = document.querySelectorAll('.statistics .count');
   const speed = 200;
 
   const startCounting = (counter) => {

@@ -177,7 +177,7 @@ ul li {
 
 .medical-services-header,
 .our-specility-header,
-.specialist-doctors-header ,.working-process-header,.news-header{
+.specialist-doctors-header ,.working-process-header,.news-header,.departments-header{
     position: relative;
     padding-top: 50px;
     padding-bottom: 6px;
@@ -186,7 +186,7 @@ ul li {
 
 .medical-services-header:after,
 .our-specility-header:after,
-.specialist-doctors-header:after,.working-process-header:after,.news-header::after {
+.specialist-doctors-header:after,.working-process-header:after,.news-header::after,.departments-header::after {
     position: absolute;
     content: "";
     height: 4px;
@@ -284,22 +284,20 @@ ul li {
     color: white;
 }
 
-.our-specility .image-section img {
+.image-section img {
     width: 100%;
 }
 
 .image-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:fit-content;
     position: relative;
-}
-
-.our-specility-content {
-    color: black;
-    width: fit-content;
 }
 
 .text-section {
     padding: 20px;
-    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -362,23 +360,19 @@ ul li {
     padding: 20px;
 }
 
-.our-specility .slide-content {
-    display: flex;
-    gap: 30px;
-}
 
 .play-button {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 40%;
+    left: 45%;
     font-size: 24px;
     background-color: var(--mainColor);
-    color: #fff;
+    color: white;
     border-radius: 50%;
-    padding: 10px;
+    padding:10px 14px;
     cursor: pointer;
     z-index: 3;
+    animation: glow 1s ease-in-out infinite alternate;
 }
 
 .fa-circle-check {
@@ -454,7 +448,7 @@ ul li {
    font-weight: bold;
  }
  .doctor-img:hover img {
-    transform: scale(1.1); /* تكبير الصورة قليلاً */
+    transform: scale(1.1); 
   }
  
   /* appointment */
@@ -714,7 +708,51 @@ ul li {
 .footer-copyright a{
     color:white;  
 }
- 
+ /* main-veiw for other pages  */
+ .main-veiw .background-veiw {
+    position: relative;
+    background-color: rgba(57, 108, 240, 0.9);
+    width: 100%;
+    height: 424px;
+    padding: 75px;
+
+
+}
+
+.main-veiw::before {
+    content: "";
+    position: absolute;
+    height: 459px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: url(./../img/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+}
+
+.veiw-header {
+    color: white;
+    padding-top: 150px;
+    padding-left: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.veiw-header a {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
 /* animation */
 
 .fade-in {
@@ -737,7 +775,14 @@ ul li {
 .spin {
     animation: spin 0.7s ease forwards;
 }
-
+@keyframes glow {
+    0% {
+      box-shadow: 0 0 8px rgba(0, 0, 255, 0.4);
+    }
+    100% {
+      box-shadow: 0 0 15px rgba(0, 0, 255, 0.8), 0 0 25px rgba(0, 0, 255, 0.6), 0 0 35px rgba(0, 0, 255, 0.4);
+    }
+}
 @keyframes fadeInLeft {
     0% {
         opacity: 0;
@@ -954,26 +999,6 @@ ul li {
 
 }
 
-/* responsive featuers */
-@media screen and (max-width: 900px) {
-    .our-specility {
-        width: 100%;
-        padding: 10px;
-    }
-
-    .our-specility .slide {
-        flex-wrap: wrap;
-    }
-
-    .text-section {
-        width: 100%
-    }
-
-    .image-section {
-        width: 100%
-    }
-
-}
 /* responsive testimonial */
 @media screen and (max-width: 600px) {
 
