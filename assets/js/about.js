@@ -37,7 +37,7 @@ function loadDepartments() {
         `;
     }).join('');
 
-    departmentsCards.innerHTML += result; 
+    departmentsCards.innerHTML += result;
 
     currentIndex += departmentsPerPage;
 
@@ -45,7 +45,7 @@ function loadDepartments() {
     if (currentIndex >= departmentsData.length) {
         const loadMoreButton = document.getElementById('loadMoreButton');
         loadMoreButton.innerText = 'No data';
-        loadMoreButton.disabled = true; 
+        loadMoreButton.disabled = true;
     }
 }
 

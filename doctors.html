@@ -105,6 +105,159 @@
             </div>
         </nav>
     </header>
+    <main>
+        <section class="main-veiw">
+            <div class="background-veiw">
+                <div class="veiw-header">
+                    <h2 class="fw-bold">Doctors Search</h2>
+                    <a href="#">Medilink - Medical WordPress Theme > Doctors Search</a>
+                </div>
+            </div>
+
+        </section>
+        <section class="doctors-search">
+            <div class="search-side">
+                <div class="row gx-5 gy-5">
+                    <div class="col-12 col-md-4">
+                        <select id="specialtyFilter">
+                            <option value="All">All</option>
+                            <option value="Neurology">Neurology</option>
+                            <option value="Medicine">Medicine</option>
+                            <option value="Pediatrics">Pediatrics</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <input type="text" id="searchName" placeholder="Type Doctor Name Here ...">
+                    </div>
+                    <div class="col-12 col-md-2">
+                        <button class="doctor-search" onclick="filterDoctors()">Search</button>
+                    </div>
+                </div>
+            </div>
+            <div id="doctorList" class="doctors">
+                <div class="row gx-5 gy-5">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="doctor-card shadow" data-name="Mark Willy" data-specialty="Neurology">
+                            <div class="img">
+                                <img src="./assets/img/doctors/doctor-1.jpg" alt="doctor-img" />
+                                <div class="overlay">
+                                    <a href="#"><span>+</span></a>
+                                </div>
+
+                            </div>
+                            <h3>Dr. Mark Willy</h3>
+                            <p>Specialty: Neurology</p>
+                            <a href="#" class="btn btn-primary ">Book An Appointment</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="doctor-card shadow" data-name="Steven Roy" data-specialty="Cardiology">
+                            <div class="img">
+                                <img src="./assets/img/doctors/doctor-2.jpg" alt="doctor-img" />
+                                <div class="overlay">
+                                    <a href="#"><span>+</span></a>
+                                </div>
+                            </div>
+                            <h3>Dr. Steven Roy</h3>
+                            <p>Specialty: Cardiology</p>
+                            <a href="#" class="btn btn-primary ">Book An Appointment</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="doctor-card shadow" data-name="Johora Roy" data-specialty="Gynecology">
+                            <div class="img">
+                                <img src="./assets/img/doctors/doctor-3.jpg" alt="doctor-img" />
+                                <div class="overlay">
+                                    <a href="#"><span>+</span></a>
+                                </div>
+                            </div>
+                            <h3>Dr. Johora Roy</h3>
+                            <p>Specialty: Gynecology</p>
+                            <a href="#" class="btn btn-primary ">Book An Appointment</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="doctor-card shadow" data-name="Nadim Kamal" data-specialty="Associate Eye">
+                            <div class="img">
+                                <img src="./assets/img/doctors/doctor-4.jpg" alt="doctor-img" />
+                                <div class="overlay">
+                                    <a href="#"><span>+</span></a>
+                                </div>
+                            </div>
+                            <h3>Dr.Zinia Zara</h3>
+                            <p>Specialty: Associate Eye</p>
+                            <a href="#" class="btn btn-primary ">Book An Appointment</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="doctor-card shadow" data-name="Mark Willy" data-specialty="Neurology">
+                            <div class="img">
+                                <img src="./assets/img/doctors/doctor-5.jpg" alt="doctor-img" />
+                                <div class="overlay">
+                                    <a href="#"><span>+</span></a>
+                                </div>
+                            </div>
+                            <h3>Dr. Mark Willy</h3>
+                            <p>Specialty: Neurology</p>
+                            <a href="#" class="btn btn-primary ">Book An Appointment</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="doctor-card shadow" data-name="Tina Rahman" data-specialty="Neurology">
+                            <div class="img">
+                                <img src="./assets/img/doctors/doctor-6.jpg" alt="doctor-img" />
+                                <div class="overlay">
+                                    <a href="#"><span>+</span></a>
+                                </div>
+                            </div>
+                            <h3>Dr. Tina Rahman</h3>
+                            <p>Specialty: Neurology</p>
+                            <a href="#" class="btn btn-primary ">Book An Appointment</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="doctor-card shadow" data-name="Nadim Kamal" data-specialty="Medicine">
+                            <div class="img">
+                                <img src="./assets/img/doctors/doctor-7.jpg" alt="doctor-img" />
+                                <div class="overlay">
+                                    <a href="#"><span>+</span></a>
+                                </div>
+                            </div>
+                            <h3>Dr. Nadim Kamal</h3>
+                            <p>Specialty: Medicine</p>
+                            <a href="#" class="btn btn-primary ">Book An Appointment</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="doctor-card shadow" data-name="Rihana Roy" data-specialty="Pediatrics">
+                            <div class="img">
+                                <img src="./assets/img/doctors/doctor-2.jpg" alt="doctor-img" />
+                                <div class="overlay">
+                                    <a href="#"><span>+</span></a>
+                                </div>
+                            </div>
+                            <h3>Dr. Rihana Roy</h3>
+                            <p>Specialty: Pediatrics</p>
+                            <a href="#" class="btn btn-primary ">Book An Appointment</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+        <section class="appointment">
+            <div class="container-fluid text-center d-flex flex-column justify-content-evenly">
+                <h2 class="fw-bold">We Provide the highest level of satisfaction</h2>
+                <a href="tel:+12344092888" class="phone-number">+123 44092 888</a>
+                <div class="appointment-button">
+                    <a href="appointment.html" class="btn btn-primary fw-bold">Make an appointment</a>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
     <!-- footer -->
     <footer class="footer">
         <div class="container-fluid">
@@ -158,17 +311,15 @@
         </div>
     </footer>
 
-    <!-- count up -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.0.7/countUp.min.js"></script>
+
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <!-- swiper js -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <!-- main js -->
 
-    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/doctor.js"></script>
 </body>
 
 </html>

@@ -27,7 +27,7 @@ zoomButtonPre.addEventListener('click', () => {
 
 //medical-services
 const swiper = new Swiper('.swiper-container', {
-  spaceBetween:110,
+  spaceBetween: 110,
   freeMode: true,
   loop: true,
   pagination: {
@@ -50,10 +50,10 @@ const swiper = new Swiper('.swiper-container', {
       slidesPerView: 2.7,
     },
     1200: {
-      slidesPerView:4,
+      slidesPerView: 4,
     },
 
- },
+  },
 });
 //our-specility
 let currentSlide = 0;
@@ -67,7 +67,7 @@ showSlide(0);
 
 //speciliest-Doctors
 var swiper3 = new Swiper(".mySwiper", {
-  slidesPerView: 4, 
+  slidesPerView: 4,
   spaceBetween: 0,
   freeMode: true,
   pagination: {
@@ -95,17 +95,17 @@ var swiper3 = new Swiper(".mySwiper", {
       slidesPerView: 1.5,
       spaceBetween: 10,
     },
-   
+
     800: {
       slidesPerView: 2,
       spaceBetween: 20,
     },
-    
+
     1024: {
       slidesPerView: 3,
       spaceBetween: 20,
     },
-    
+
   },
 });
 //statistics
@@ -114,33 +114,33 @@ document.addEventListener("DOMContentLoaded", () => {
   const speed = 200;
 
   const startCounting = (counter) => {
-      const target = +counter.getAttribute('data-target');
-      counter.innerText = "0"; 
-      const updateCount = () => {
-          const count = +counter.innerText;
-          const increment = target / speed;
+    const target = +counter.getAttribute('data-target');
+    counter.innerText = "0";
+    const updateCount = () => {
+      const count = +counter.innerText;
+      const increment = target / speed;
 
-          if (count < target) {
-              counter.innerText = Math.ceil(count + increment);
-              setTimeout(updateCount, 10);
-          } else {
-              counter.innerText = target;
-          }
-      };
+      if (count < target) {
+        counter.innerText = Math.ceil(count + increment);
+        setTimeout(updateCount, 10);
+      } else {
+        counter.innerText = target;
+      }
+    };
 
-      updateCount();
+    updateCount();
   };
 
   const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-          if (entry.isIntersecting) {
-              startCounting(entry.target);
-          }
-      });
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        startCounting(entry.target);
+      }
+    });
   }, { threshold: 0.5 });
 
   counters.forEach(counter => {
-      observer.observe(counter);
+    observer.observe(counter);
   });
 });
 // testimonial
@@ -161,7 +161,7 @@ ButtonNext.addEventListener('click', () => {
 ButtonPre.addEventListener('click', () => {
   bgTest.forEach(bgTest => {
 
-    animationsTest.forEach(animationsTest=> bgTest.classList.remove(animationsTest));
+    animationsTest.forEach(animationsTest => bgTest.classList.remove(animationsTest));
 
     const randomAnimation = animationsTest[Math.floor(Math.random() * animationsTest.length)];
 

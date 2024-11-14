@@ -1,89 +1,87 @@
-
 /* appiontment-form */
 .appointment-form {
-    padding: 20px;
-    background-color: #f1f7fa;
-
+  padding: 20px;
+  background-color: #f1f7fa;
 }
 
 .appoint-form {
-    background-color: white;
-    height: max-content;
-    padding: 30px;
-    border-radius: 3%;
+  background-color: white;
+  height: max-content;
+  padding: 30px;
+  border-radius: 3%;
 }
 
 .appointment-form select,
 .appointment-form input,
 .appointment-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 14px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
 }
 
 .inline-inputs {
-    display: flex;
-    gap: 10px;
+  display: flex;
+  gap: 10px;
 }
 
 .inline-inputs input {
-    width: 100%;
+  width: 100%;
 }
 
 .btn-appiontment button {
-    width: 50%;
-    padding: 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  width: 50%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .appointment-form button:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 
 .appiontment-img img,
 .btn-appiontment {
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn-appiontment {
-    width: 100%;
+  width: 100%;
 }
 
 /* contact-sectin */
-.contact-section .container-fluid{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    height: 300px;
+.contact-section .container-fluid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 300px;
 }
-.contact-text{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    width:80%;
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 80%;
 }
-.phone-icon{
-    color:var(--mainColor);
+.phone-icon {
+  color: var(--mainColor);
 }
 .phone-number {
-    font-size: 18px;
-    color: black;
-    font-weight: bold;
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
 }
 
 .phone-number:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }

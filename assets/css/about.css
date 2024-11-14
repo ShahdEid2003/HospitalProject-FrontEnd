@@ -5,9 +5,6 @@
 }
 
 .about-text .image-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: fit-content;
   position: relative;
 }
@@ -97,26 +94,19 @@
   background-color: white;
   color: var(--mainColor);
 }
-.choose-us{
-    width: 100%;
-    padding: 30px;
-    height: max-content;
-    
+.choose-us {
+  width: 100%;
+  padding: 30px;
+  height: max-content;
 }
-.choose-us-text{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 20px;
+.choose-us-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
 }
-.choose-us-image img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-}
-.choose-us-image img{
-    width: 80%;
-
+.choose-us-image img {
+  width: 80%;
 }
