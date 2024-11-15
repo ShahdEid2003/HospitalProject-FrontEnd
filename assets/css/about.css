@@ -21,11 +21,11 @@
 }
 
 .modal-dialog {
-  max-width: 60%;
+  width: 80%;
 }
 
 .modal-content {
-  height: 60vh;
+  height:500px;
 }
 
 /* departments */
@@ -109,4 +109,13 @@
 
 .choose-us-image img {
   width: 80%;
+}
+@media screen and (max-width: 580px) {
+  .modal-dialog {
+    width: 100%;
+  }
+  .modal-content {
+    height:80%;
+  }
+
 }
