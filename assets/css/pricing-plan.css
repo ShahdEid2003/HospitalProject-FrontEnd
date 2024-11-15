@@ -1,0 +1,38 @@
+.pricing{
+    width:100%;
+    padding:30px;
+    height:max-content;
+    background-color: #f1f7fa;
+}
+.pricing-header{
+    padding: 10px;
+}
+.pricing .pricing-card {
+    width:100%;
+    height:100%;
+    padding: 30px 10px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.features{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+}
+.price{
+    border-bottom: 2px solid var(--mainColor);
+    font-size: larger;
+    font-weight: bold;
+}
+.pricing .btn{
+    border: 1px solid var(--mainColor);
+}
+.pricing-card:hover {
+    transform: scale(1.05); 
+    transition: transform 0.5s ease; 
+}

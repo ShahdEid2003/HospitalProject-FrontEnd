@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News</title>
+    <!-- font-awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <!-- cssLink -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/bolg.css" />
+</head>
+
+<body>
+    <!-- header -->
+    <header class="sticky-top bg-white shadow">
+        <nav class=" navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <div class="logo d-flex">
+                    <a class="navbar-brand ms-10" href="#"><img src="./assets/img/logo/logo-dark.png" /></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="doctors.html">Doctors</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="departments.html">Departments</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="appointment.html">Appointment Form</a></li>
+                                <li><a class="dropdown-item" href="pricing-plan.html">Pricing Plan</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="search">
+                    <button type="button" class="btn btn-primary bg-transparent " data-bs-toggle="modal"
+                        data-bs-target="#searchModal">
+                        <i class="fa-solid fa-magnifying-glass search-icon "></i>
+                    </button>
+
+                </div>
+                <div class="appointment-btn ">
+                    <a class="btn btn-primary" href="appointment.html" role="button">Appointment</a>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Search Modal -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success search" type="submit"><i
+                                class="fa-solid fa-magnifying-glass search-icon "></i></button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <main>
+        <section class="main-veiw">
+            <div class="background-veiw">
+                <div class="veiw-header">
+                    <h1 class="fw-bold">News</h1>
+                    <a href="#"><span>Medilink - Medical WordPress Theme </span>>News</a>
+                </div>
+            </div>
+        </section>
+        <section class="blog">
+            <div class="container">
+                <div id="page1">
+                    <div class="row gx-5 gy-5">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="news-card">
+                                <img src="./assets/img/blog/blog-img4.jpg" alt="blog-img1" class="news-image" />
+                                <div class="news-content">
+                                    <div class="news-meta">
+                                        <span class="date-icon"><i class="fa-solid fa-calendar-days"></i></span>
+                                        November 12, 2018
+                                        <span class="admin-icon"><i class="fa-solid fa-user"></i></span>admin
+                                    </div>
+                                    <h3 class="news-title">
+                                        Dental office printingdern care to ailing dear.
+                                    </h3>
+                                    <p class="news-description">
+                                        Fummy text of the printing and type news setting industrs
+                                        standard known printing and typenews...
+                                    </p>
+                                    <div class="news-footer d-flex justify-content-between align-items-center">
+                                        <a href="#" class="read-more"><i class="fa-solid fa-user"></i> admin</a>
+                                        <div class="comments">
+                                            <a href="#"><i class="fa-solid fa-comments"></i> </a>0
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="news-card">
+                                <img src="./assets/img/blog/blog-img5.jpg" alt="blog-img1" class="news-image" />
+                                <div class="news-content">
+                                    <div class="news-meta">
+                                        <span class="date-icon"><i class="fa-solid fa-calendar-days"></i></span>
+                                        November 12, 2018
+                                        <span class="admin-icon"><i class="fa-solid fa-user"></i></span>admin
+                                    </div>
+                                    <h3 class="news-title">
+                                        Your Medical Records are Safe now a days.
+                                    </h3>
+                                    <p class="news-description">
+                                        Fummy text of the printing and type news setting industrs
+                                        standard known printing and typenews...
+                                    </p>
+                                    <div class="news-footer d-flex justify-content-between align-items-center">
+                                        <a href="#" class="read-more"><i class="fa-solid fa-user"></i> admin</a>
+                                        <div class="comments">
+                                            <a href="#"><i class="fa-solid fa-comments"></i> </a>0
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="news-card">
+                                <img src="./assets/img/blog/blog-img6.jpg" alt="blog-img1" class="news-image" />
+                                <div class="news-content">
+                                    <div class="news-meta">
+                                        <span class="date-icon"><i class="fa-solid fa-calendar-days"></i></span>
+                                        November 12, 2018
+                                        <span class="admin-icon"><i class="fa-solid fa-user"></i></span>admin
+                                    </div>
+                                    <h3 class="news-title">
+                                        We are amongst the most qualified dental implant providers
+                                    </h3>
+                                    <p class="news-description">
+                                        Fummy text of the printing and type news setting industrs
+                                        standard known printing and typenews...
+                                    </p>
+                                    <div class="news-footer d-flex justify-content-between align-items-center">
+                                        <a href="#" class="read-more"><i class="fa-solid fa-user"></i> admin</a>
+                                        <div class="comments">
+                                            <a href="#"><i class="fa-solid fa-comments"></i> </a>0
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="news-card">
+                                <img src="./assets/img/blog/blog-img1.jpg" alt="blog-img1" class="news-image" />
+                                <div class="news-content">
+                                    <div class="news-meta">
+                                        <span class="date-icon"><i class="fa-solid fa-calendar-days"></i></span>
+                                        November 12, 2018
+                                        <span class="admin-icon"><i class="fa-solid fa-user"></i></span>admin
+                                    </div>
+                                    <h3 class="news-title">
+                                        Office In our clinic discounts for a full inspection
+                                    </h3>
+                                    <p class="news-description">
+                                        Fummy text of the printing and type news setting industrs
+                                        standard known printing and typenews...
+                                    </p>
+                                    <div class="news-footer d-flex justify-content-between align-items-center">
+                                        <a href="#" class="read-more"><i class="fa-solid fa-user"></i> admin</a>
+                                        <div class="comments">
+                                            <a href="#"><i class="fa-solid fa-comments"></i> </a>0
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="news-card">
+                                <img src="./assets/img/blog/blog-img2.jpg" alt="blog-img1" class="news-image" />
+                                <div class="news-content">
+                                    <div class="news-meta">
+                                        <span class="date-icon"><i class="fa-solid fa-calendar-days"></i></span>
+                                        November 12, 2018
+                                        <span class="admin-icon"><i class="fa-solid fa-user"></i></span>admin
+                                    </div>
+                                    <h3 class="news-title">
+                                        Medical Records are Safe Your now a days.
+                                    </h3>
+                                    <p class="news-description">
+                                        Fummy text of the printing and type news setting industrs
+                                        standard known printing and typenews...
+                                    </p>
+                                    <div class="news-footer d-flex justify-content-between align-items-center">
+                                        <a href="#" class="read-more"><i class="fa-solid fa-user"></i> admin</a>
+                                        <div class="comments">
+                                            <a href="#"><i class="fa-solid fa-comments"></i> </a>0
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="news-card">
+                                <img src="./assets/img/blog/blog-img3.jpg" alt="blog-img1" class="news-image" />
+                                <div class="news-content">
+                                    <div class="news-meta">
+                                        <span class="date-icon"><i class="fa-solid fa-calendar-days"></i></span>
+                                        November 12, 2018
+                                        <span class="admin-icon"><i class="fa-solid fa-user"></i></span>admin
+                                    </div>
+                                    <h3 class="news-title">
+                                        In our clinic discounts for a full inspection
+                                    </h3>
+                                    <p class="news-description">
+                                        Fummy text of the printing and type news setting industrs
+                                        standard known printing and typenews...
+                                    </p>
+                                    <div class="news-footer d-flex justify-content-between align-items-center">
+                                        <a href="#" class="read-more"><i class="fa-solid fa-user"></i> admin</a>
+                                        <div class="comments">
+                                            <a href="#"><i class="fa-solid fa-comments"></i> </a>0
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="page2">
+                    <div class="row gx-5 gy-5">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="news-card">
+                                <img src="./assets/img/blog/blog-img7.png" alt="blog-img7" class="news-image" />
+                                <div class="news-content">
+                                    <div class="news-meta">
+                                        <span class="date-icon"><i class="fa-solid fa-calendar-days"></i></span>
+                                        November 12, 2018
+                                        <span class="admin-icon"><i class="fa-solid fa-user"></i></span>admin
+                                    </div>
+                                    <h3 class="news-title">
+                                        Dental office need a blog area galley care to ailing dear.
+                                    </h3>
+                                    <p class="news-description">
+                                        Fummy text of the printing and type news setting industrs
+                                        standard known printing and typenews...
+                                    </p>
+                                    <div class="news-footer d-flex justify-content-between align-items-center">
+                                        <a href="#" class="read-more"><i class="fa-solid fa-user"></i> admin</a>
+                                        <div class="comments">
+                                            <a href="#"><i class="fa-solid fa-comments"></i> </a>0
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="news-card">
+                                <img src="./assets/img/blog/blog-img8.jpg" alt="blog-img1" class="news-image" />
+                                <div class="news-content">
+                                    <div class="news-meta">
+                                        <span class="date-icon"><i class="fa-solid fa-calendar-days"></i></span>
+                                        November 12, 2018
+                                        <span class="admin-icon"><i class="fa-solid fa-user"></i></span>admin
+                                    </div>
+                                    <h3 class="news-title">
+                                        Medical Records are Safe Your now a days
+                                    </h3>
+                                    <p class="news-description">
+                                        Fummy text of the printing and type news setting industrs
+                                        standard known printing and typenews...
+                                    </p>
+                                    <div class="news-footer d-flex justify-content-between align-items-center">
+                                        <a href="#" class="read-more"><i class="fa-solid fa-user"></i> admin</a>
+                                        <div class="comments">
+                                            <a href="#"><i class="fa-solid fa-comments"></i> </a>0
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="news-card">
+                                <img src="./assets/img/blog/blog-img9.jpg" alt="blog-img1" class="news-image" />
+                                <div class="news-content">
+                                    <div class="news-meta">
+                                        <span class="date-icon"><i class="fa-solid fa-calendar-days"></i></span>
+                                        November 12, 2018
+                                        <span class="admin-icon"><i class="fa-solid fa-user"></i></span>admin
+                                    </div>
+                                    <h3 class="news-title">
+                                        Your Medical Records are Safe now a days.
+                                    </h3>
+                                    <p class="news-description">
+                                        Fummy text of the printing and type news setting industrs
+                                        standard known printing and typenews...
+                                    </p>
+                                    <div class="news-footer d-flex justify-content-between align-items-center">
+                                        <a href="#" class="read-more"><i class="fa-solid fa-user"></i> admin</a>
+                                        <div class="comments">
+                                            <a href="#"><i class="fa-solid fa-comments"></i> </a>0
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <nav aria-label="Page navigation">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item" id="prev">
+                            <a class="page-link" href="#" onclick="prevPage()">Previous</a>
+                        </li>
+                        <li class="page-item" id="page1">
+                            <a class="page-link" href="#" onclick="goToPage(1)">1</a>
+                        </li>
+                        <li class="page-item" id="page2">
+                            <a class="page-link" href="#" onclick="goToPage(2)">2</a>
+                        </li>
+                        <li class="page-item" id="next">
+                            <a class="page-link" href="#" onclick="nextPage()">Next</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </main>
+
+ 
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="footer-logo">
+                <img src="./assets/img/logo/logo-light.png" alt="MediLink Logo" />
+                <p>
+                    We are ipsum dolor sit amet aeaett consectetur adipiscing elit, sed
+                    diam nonummy.
+                </p>
+                <p><i class="fas fa-map-marker-alt"></i> 59 Street, 1200 Techpark.</p>
+                <p><i class="fas fa-phone"></i> +59888555</p>
+                <p><i class="fas fa-envelope"></i> medilink@gmail.com</p>
+            </div>
+
+            <div class="footer-links">
+                <h2>Departments</h2>
+                <ul>
+                    <li><a href="#">Who We Are</a></li>
+                    <li><a href="#">Our Mission</a></li>
+                    <li><a href="#">Awards</a></li>
+                    <li><a href="#">Experience</a></li>
+                    <li><a href="#">Success Story</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">Who We Are</a></li>
+                    <li><a href="#">Our Mission</a></li>
+                    <li><a href="#">Awards</a></li>
+                    <li><a href="#">Experience</a></li>
+                    <li><a href="#">Success Story</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-hours">
+                <h2>Opening Hours</h2>
+                <ul>
+                    <li>Monday: 09:00 am - 10:00 pm</li>
+                    <li>Tuesday: 09:00 am - 10:00 pm</li>
+                    <li>Wednesday: 09:00 am - 10:00 pm</li>
+                    <li>Thursday: 09:00 am - 10:00 pm</li>
+                    <li>Friday: 09:00 am - 10:00 pm</li>
+                    <li>Saturday: <span class="closed">Closed</span></li>
+                    <li>Sunday: <span class="closed">Closed</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <p>
+                &copy; 2024 MediLink. All Rights Reserved by
+                <a href="#">RadiusTheme</a>
+            </p>
+        </div>
+    </footer>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/blog.js"></script>
+</body>
+
+</html>

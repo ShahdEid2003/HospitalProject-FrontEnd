@@ -185,7 +185,7 @@ ul li {
 .specialist-doctors-header,
 .working-process-header,
 .news-header,
-.departments-header {
+.departments-header,.pricing-header {
   position: relative;
   padding-top: 50px;
   padding-bottom: 6px;
@@ -197,7 +197,7 @@ ul li {
 .specialist-doctors-header:after,
 .working-process-header:after,
 .news-header::after,
-.departments-header::after {
+.departments-header::after,.pricing-header::after {
   position: absolute;
   content: "";
   height: 4px;
@@ -715,7 +715,12 @@ ul li {
   height: 424px;
   padding: 75px;
 }
-
+.main-veiw span{
+  color:#c5d5ff;
+}
+.main-veiw span:hover{
+  color:white;
+}
 .main-veiw::before {
   content: "";
   position: absolute;
