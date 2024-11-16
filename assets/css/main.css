@@ -610,6 +610,7 @@ header .nav-item a:hover{
   padding-top: 15px;
 }
 .news-card {
+  height: 100%;
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 8px;
