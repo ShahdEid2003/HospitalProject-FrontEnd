@@ -105,6 +105,10 @@ var swiper3 = new Swiper(".mySwiper", {
       slidesPerView: 2.5,
       spaceBetween: 20,
     },
+    1102: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
 
   },
 });
