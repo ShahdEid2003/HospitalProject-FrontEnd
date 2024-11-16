@@ -40,7 +40,7 @@ const swiper = new Swiper('.swiper-container', {
     },
 
     400: {
-      slidesPerView: 1.7,
+      slidesPerView: 1.5,
     },
 
     550: {
@@ -101,8 +101,8 @@ var swiper3 = new Swiper(".mySwiper", {
       spaceBetween: 20,
     },
 
-    1024: {
-      slidesPerView: 3,
+    1042: {
+      slidesPerView: 2.5,
       spaceBetween: 20,
     },
 

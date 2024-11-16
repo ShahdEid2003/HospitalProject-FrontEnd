@@ -24,7 +24,11 @@ p,
 ul li {
   font-family: "Roboto", sans-serif;
 }
+header .nav-item a:hover{
+  color:var(--mainColor);
+  font-weight: bold;
 
+}
 .slider-img,
 .contact-veiw .background-veiw {
   padding-top: 75px;

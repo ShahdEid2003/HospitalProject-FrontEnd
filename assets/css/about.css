@@ -20,11 +20,11 @@
   gap: 20px;
 }
 
-.modal-dialog {
+#aboutModal .modal-dialog {
   width: 80%;
 }
 
-.modal-content {
+#aboutModal .modal-content {
   height:500px;
 }
 
@@ -111,10 +111,10 @@
   width: 80%;
 }
 @media screen and (max-width: 580px) {
-  .modal-dialog {
+  #aboutModal .modal-dialog {
     width: 100%;
   }
-  .modal-content {
+  #aboutModal .modal-content {
     height:80%;
   }
 
