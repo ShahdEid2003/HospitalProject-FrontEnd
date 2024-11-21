@@ -735,14 +735,14 @@ header .nav-item a:hover{
 }
 /* animation */
 .section {
-  opacity: 0; /* إخفاء العنصر في البداية */
-  transform: translateY(20px); /* إضافة تأثير انتقال */
-  transition: opacity 0.5s ease, transform 0.5s ease; /* تأثير الحركة */
+  opacity: 0; 
+  transform: translateY(20px); 
+  transition: opacity 0.5s ease, transform 0.5s ease; 
 }
 
 .section.visible {
-  opacity: 1; /* إظهار العنصر */
-  transform: translateY(0); /* إرجاع العنصر لمكانه الأصلي */
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .fade-top {
