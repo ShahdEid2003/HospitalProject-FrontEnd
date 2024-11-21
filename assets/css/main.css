@@ -734,6 +734,17 @@ header .nav-item a:hover{
   transition: color 0.3s ease;
 }
 /* animation */
+.section {
+  opacity: 0; /* إخفاء العنصر في البداية */
+  transform: translateY(20px); /* إضافة تأثير انتقال */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* تأثير الحركة */
+}
+
+.section.visible {
+  opacity: 1; /* إظهار العنصر */
+  transform: translateY(0); /* إرجاع العنصر لمكانه الأصلي */
+}
+
 .fade-top {
   opacity: 0; /* Start fully transparent */
   transform: translateY(-30px); /* Start slightly above */

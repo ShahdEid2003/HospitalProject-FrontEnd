@@ -1,3 +1,13 @@
+//
+window.addEventListener('scroll', () => {
+    document.querySelectorAll('.section').forEach((section) => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top < window.innerHeight * 0.25) {
+            section.classList.add('visible');
+        } 
+    });
+});
+
 //departments
 const departmentsData = [
     { image: "./assets/img/about/eye-care.jpg", title: "Eye Care", doctors: 4 },
