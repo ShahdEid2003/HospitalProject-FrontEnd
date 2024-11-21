@@ -213,27 +213,6 @@ header .nav-item a:hover{
   margin: 0 auto;
   border-radius: 4px;
 }
-
-.medical-services .carousel-item-next,
-.medical-services .carousel-item-prev,
-.medical-services .carousel-item.active,
-.medical-services .carousel-item {
-  padding: 40px;
-}
-
-.carousel-indicators .active {
-  background-color: var(--mainColor) !important;
-}
-
-.indicator {
-  background-color: #6b6b6b !important;
-}
-
-.indicator:hover {
-  background-color: rgba(0, 0, 255, 0.39);
-  cursor: pointer;
-}
-
 .card {
   width: 250px;
   padding: 30px;
@@ -274,16 +253,13 @@ header .nav-item a:hover{
 .swiper-container {
   width: 100%;
   max-width: 1000px;
-  height: 300px;
+  height: 335px;
   position: relative;
   padding: 30px;
 }
 
-.swiper-horizontal > .swiper-pagination-bullets,
-.swiper-pagination-bullets.swiper-pagination-horizontal,
-.swiper-pagination-custom,
-.swiper-pagination-fraction {
-  left: 13%;
+ .swiper-pagination-bullets.swiper-pagination-horizontal{
+  left: 15%;
 }
 
 /* our specility */

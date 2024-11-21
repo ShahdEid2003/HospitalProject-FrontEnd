@@ -40,13 +40,11 @@ window.onscroll = function () {
   }
 
 }
-
-
 //medical-services
 const swiper = new Swiper('.swiper-container', {
   spaceBetween: 110,
   freeMode: true,
-  loop: true,
+  loop: false,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
