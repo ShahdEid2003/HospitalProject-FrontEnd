@@ -24,6 +24,23 @@ zoomButtonPre.addEventListener('click', () => {
     image.classList.add(randomAnimation);
   });
 });
+//aboutScroll
+window.onscroll = function () {
+ 
+  const about = document.querySelector('.about');
+  const windowHeight = window.innerHeight; 
+  const sectionTop = about.offsetTop; 
+  const sectionHeight = about.offsetHeight;
+
+  if (window.scrollY + windowHeight > sectionTop + sectionHeight / 4) {
+      about.classList.add('fade-top');
+  }
+  else {
+      about.classList.remove('fade-top');
+  }
+
+}
+
 
 //medical-services
 const swiper = new Swiper('.swiper-container', {
