@@ -26,17 +26,17 @@ zoomButtonPre.addEventListener('click', () => {
 });
 //aboutScroll
 window.onscroll = function () {
- 
+
   const about = document.querySelector('.about');
-  const windowHeight = window.innerHeight; 
-  const sectionTop = about.offsetTop; 
+  const windowHeight = window.innerHeight;
+  const sectionTop = about.offsetTop;
   const sectionHeight = about.offsetHeight;
 
   if (window.scrollY + windowHeight > sectionTop + sectionHeight / 4) {
-      about.classList.add('fade-top');
+    about.classList.add('fade-top');
   }
   else {
-      about.classList.remove('fade-top');
+    about.classList.remove('fade-top');
   }
 
 }
