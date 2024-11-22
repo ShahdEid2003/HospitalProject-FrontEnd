@@ -41,8 +41,9 @@ window.onscroll = function () {
 
 }
 //medical-services
-const swiper = new Swiper('.swiper-container', {
-  spaceBetween: 110,
+const swiper = new Swiper('.services', {
+  slidesPerView: 5,
+  spaceBetween: 5,
   freeMode: true,
   loop: false,
   pagination: {
@@ -51,18 +52,24 @@ const swiper = new Swiper('.swiper-container', {
   },
   breakpoints: {
     300: {
-      slidesPerView: 1,
+      slidesPerView: .8,
     },
 
     400: {
-      slidesPerView: 1.5,
+      slidesPerView: 1,
     },
 
     550: {
-      slidesPerView: 2,
+      slidesPerView: 1.5,
     },
-    700: {
-      slidesPerView: 2.7,
+    620: {
+      slidesPerView: 1.8,
+    },
+    730: {
+      slidesPerView: 2.3,
+    },
+    900: {
+      slidesPerView: 3,
     },
     1200: {
       slidesPerView: 4,
