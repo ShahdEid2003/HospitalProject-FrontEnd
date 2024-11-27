@@ -1,3 +1,11 @@
+window.addEventListener('scroll', () => {
+  document.querySelectorAll('.section').forEach((section) => {
+      const rect = section.getBoundingClientRect();
+      if (rect.top < window.innerHeight * 0.7) {
+          section.classList.add('visible');
+      } 
+  });
+});
 //slider-MainImages
 const images = document.querySelectorAll('.carousel-item .image');
 const zoomButtonNext = document.querySelector('.carousel-control-next');
@@ -24,28 +32,17 @@ zoomButtonPre.addEventListener('click', () => {
     image.classList.add(randomAnimation);
   });
 });
-//aboutScroll
-window.onscroll = function () {
 
-  const about = document.querySelector('.about');
-  const windowHeight = window.innerHeight;
-  const sectionTop = about.offsetTop;
-  const sectionHeight = about.offsetHeight;
-
-  if (window.scrollY + windowHeight > sectionTop + sectionHeight / 4) {
-    about.classList.add('fade-top');
-  }
-  else {
-    about.classList.remove('fade-top');
-  }
-
-}
 //medical-services
 const swiper = new Swiper('.services', {
   slidesPerView: 5,
   spaceBetween: 5,
   freeMode: true,
   loop: false,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
   pagination: {
     el: '.swiper-pagination',
     clickable: true,

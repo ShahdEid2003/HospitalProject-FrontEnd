@@ -46,7 +46,7 @@ const departments = [
   departmentsRow.innerHTML=``;
   departments.forEach(department => {
     const card = `
-      <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="section col-lg-4 col-md-6 col-sm-12">
         <div class="department-card shadow">
           <img src="${department.image}" alt="${department.alt}">
           <h3 class="fw-bold">${department.title}</h3>

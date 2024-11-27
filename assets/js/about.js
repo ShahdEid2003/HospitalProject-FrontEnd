@@ -1,12 +1,3 @@
-//
-window.addEventListener('scroll', () => {
-    document.querySelectorAll('.section').forEach((section) => {
-        const rect = section.getBoundingClientRect();
-        if (rect.top < window.innerHeight * 0.7) {
-            section.classList.add('visible');
-        } 
-    });
-});
 
 //departments
 const departmentsData = [
@@ -34,7 +25,7 @@ function loadDepartments() {
 
     const result = nextDepartments.map(department => {
         return `
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+        <div class="section col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
             <div class="department-card shadow">
                 <img src="${department.image}" alt="${department.title}">
                 <h3>${department.title}</h3>
