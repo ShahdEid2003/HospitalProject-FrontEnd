@@ -44,7 +44,7 @@ const doctors = [
 
 
 const doctorCards = doctors.map(doctor => `
-  <div class="section col-12 col-sm-6 col-lg-3">
+  <div class="section col-10 col-sm-6 col-lg-3">
       <div class="doctor-card shadow" data-name="${doctor.name}" data-specialty="${doctor.specialty}">
           <div class="img">
               <img src="${doctor.imgSrc}" alt="doctor-img" />
