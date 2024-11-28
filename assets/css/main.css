@@ -568,13 +568,15 @@ header .nav-item a:hover {
   border: 3px solid white;
 }
 
-.testimonial-text,
-.profile-title {
+.testimonial-text {
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 100px;
   color: white;
 }
-
+.profile-title {
+  color: white;
+  font-weight:bold;
+}
 /* news */
 .news {
   padding: 20px;
